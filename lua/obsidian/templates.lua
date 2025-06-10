@@ -232,9 +232,9 @@ M.load_template_customizations = function(template_name, client)
   }
 
   client[restore_client_key] = restore_values
-  client.opts.notes_subdir = customization.dir
-  client.opts.note_id_func = customization.note_id_func
-  client.opts.new_notes_location = config.NewNotesLocation.notes_subdir
+  client.opts.notes_subdir = customization.dir or client.opts.notes_subdir
+  client.opts.note_id_func = customization.note_id_func or client.opts.note_id_func
+  client.opts.new_notes_location = config.NewNotesLocation.notes_subdir or client.opts.new_notes_location
   return nil
 end
 

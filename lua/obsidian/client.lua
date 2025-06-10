@@ -1734,7 +1734,7 @@ Client.parse_title_id_path = function(self, title, id, dir)
 
   -- Generate new ID if needed.
   if not id then
-    id = self:new_note_id(title)
+    id = self:new_note_id(title, base_dir)
   end
 
   -- Generate path.

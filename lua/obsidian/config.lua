@@ -471,7 +471,7 @@ end
 ---@class obsidian.config.CustomTemplateOpts
 ---
 ---@field dir string|?
----@field note_id_func function|?
+---@field note_id_func (fun(title: string|?, path: obsidian.Path|?): string|?
 
 ---@class obsidian.config.UIOpts
 ---
